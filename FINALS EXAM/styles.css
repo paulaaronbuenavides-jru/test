@@ -1,0 +1,231 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Smaller Header Section with Navigation */
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px 0; /* Reduced padding */
+    position: sticky; /* Sticky navigation bar */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em; /* Reduced font size */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+header .tagline {
+    font-size: 1.2em; /* Reduced font size */
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* Navigation Menu */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em; /* Reduced font size for navigation links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling when anchor links are clicked */
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about img.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 5px #4CAF50;
+    transition: box-shadow 0.3s ease;
+}
+
+#about img.profile-img:hover {
+    box-shadow: 0 0 0 5px #388e3c;
+}
+
+#about h2 {
+    font-size: 2.4em;
+    margin-top: 20px;
+}
+
+/* My Works Section */
+#my-works {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#my-works h2 {
+    font-size: 3.2em;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.work-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.work-img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+footer ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Reduced font size */
+    }
+
+    header .tagline {
+        font-size: 1em; /* Reduced font size */
+    }
+
+    #about img.profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #about h2 {
+        font-size: 2em;
+    }
+
+    #my-works h2 {
+        font-size: 2.8em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
